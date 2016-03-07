@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="portApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ch5execercise1</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="./js/script.js"></script>
+	<script src="./js/classie.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="./css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="./css/component.css" />
+	<script src="./js/modernizr.custom.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script src="./node_modules/angular-route/angular-route.min.js"></script>
+	<script src="./node_modules/angular-animate/angular-animate.min.js"></script>
+	<script src="./js/angularjs/app.js"></script>
+	
+</head>
+<body id="body" ng-controller="mainController">
+
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#/welcome"><img src="./img/logo.png" id="logo"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="cl-effect-1">
+
+        <a href="#/projekter" id="classadd" data-hover="Projekter">Projekter</a>	
+       	<a href="#" id="classadd" data-hover="Erfaringer">Erfaringer</a>	
+       	<a href="#" id="classadd" data-hover="Hobbier">Hobbier</a>	
+        
+      </div>
+      <div id="change" class="pull-right">
+		<button class="btn btn-default" id="scheme1" onclick="changeColor('change1')">Purplish</button>
+		<button class="btn btn-default"  id="scheme2" onclick="changeColor('change2')">Reddish</button>
+		<button class="btn btn-default"  id="scheme3" onclick="changeColor('change3')">Whiteish</button>
+	</div>
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<!-- 	<div id="menu">
+	</div> -->
+		
+<div style="margin-top:150px;"></div>
+
+	<div class="container">
+		<div class="row row-centered">
+
+			<div class="col-md-12 col-centered"><h1 id="introtext">Jacob Gerlif Pilegaard, webudvikler med fokus på <b class="introcolor">frontend</b> og <b class="introcolor">fuldstak udvikling</b> inden for Javascript. Har erfaring med <i class="">Javascript, MEAN stak, CMS og basal HTML & CSS udvikling</i>. Grafisk udvikling har været min primære interesse i mange år, og har derfor stor erfaring i <b class="introcolor">Adobe-pakken.</b> </h1></div>
+		</div>
+
+	</div>
+	
+   <div ng-view ng-class="{slide: path !== '/' }"></div>
+	
+</body>
+</html>

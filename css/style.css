@@ -1,0 +1,305 @@
+
+/* TABLE OF CONTENT
+==================================================================
+
+	- base tags
+	- menu tags
+		- menu tags jQuery classes
+	- fixed content tags
+	- project page tags
+	- angular animate tags
+
+==================================================================
+*/
+
+
+
+/* base tags
+==================================================================
+*/
+
+body {
+			background-color: white;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			overflow-x: hidden;
+			height: 100%;
+
+		}
+html {
+	height: 100%;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+a:hover {
+	text-decoration: none !important;
+
+}
+.whitelink a {
+	
+	color: black !important;
+}
+
+.whitelink a:hover {
+	
+	color: black !important;
+
+}
+
+.colorlink a {
+	
+	color: white !important;
+}
+
+.colorlink a:hover {
+	
+	color: white !important;
+}
+
+input {
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid black;
+	width: 200px;
+	line-height: 40px 
+}
+h1 {
+
+	font-family: 'Montserrat-hairline', sans-serif !important;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif !important; 
+	font-weight: 700 !important;
+	text-align: left;
+	color:white !important;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*hairline version*/
+@font-face {
+	font-family: 'Montserrat-hairline';
+	src: url('../fonts/Montserrat-Hairline.otf'); 
+
+
+}
+
+/* base tags end 
+==================================================================
+*/
+
+
+
+
+/* menu tags
+==================================================================
+*/
+
+.btn-default {
+	background-color: transparent !important;
+}
+
+#menu{
+	height: 150px;
+	background-color:white;
+	border: none;
+	overflow: hidden;
+	  -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+
+.cl-effect-1 {
+	line-height: 125px;
+	 -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#logo {
+	margin-top: -10px;
+	width: 100px;
+	height:100px;
+	  -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+#change {
+	margin-top: -100px;
+	  -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+/* menu tags jQuery classes*/
+
+#menu.smaller {
+ height: 75px;
+ border-bottom: 1px solid #e7e7e7 !important;
+}
+
+.cl-effect-1.smaller {
+line-height: 50px;
+}
+
+#logo.smaller {
+	margin-top: -15px;
+	width: 50px;
+	height: 50px;
+}
+
+#change.smaller {
+	margin-top: -50px
+}
+
+/* menu tags end
+==================================================================
+*/
+
+
+
+
+
+
+/* home page tags
+==================================================================
+*/
+
+
+
+/* home page tags end
+==================================================================
+*/
+
+
+
+
+
+
+/* fixed content tags
+==================================================================
+*/
+
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    	
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+
+
+.introcolor {
+	color: #2196F3;
+}
+
+.introkursiv {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/* fixed content tags end
+==================================================================
+*/
+
+
+
+
+
+/* project page tags
+==================================================================
+*/
+
+
+.non-color-project {
+	width:100%; 
+	height:300px;  
+	margin-top: 50px; 
+	border-top: 1px solid black
+}
+
+
+.infoboxlabels {
+	margin-top: -15px;
+	margin-left: 10px;
+	
+}
+
+.infoboxlabelswhite {
+	margin-top: -16px;
+	margin-left: 10px;
+	
+}
+
+#firstlabel {
+	margin-left: 100px;
+}
+
+/* project page tags end
+==================================================================
+*/
+
+
+
+
+
+/* angular animate tags
+==================================================================
+*/
+
+
+.slide{
+  left:0;
+}
+.slide.ng-enter{
+  transition:0.15s linear all;
+  position:fixed;
+  z-index:inherit;
+  left:-100%;
+  height:inherit;
+}
+.slide.ng-leave{
+  transition:0.15s linear all;
+  position:fixed;
+  z-index:9999;
+  right:0;
+}
+.slide.ng-leave-active{
+  transition:0.15s linear all;
+  position:fixed;
+  right:-100%;
+  left:100%;
+}
+.slide.ng-enter-active{
+  transition:0.5s linear all;
+  left:0;
+  position:relative;
+}
+
+/* angular animate page end
+==================================================================
+*/
